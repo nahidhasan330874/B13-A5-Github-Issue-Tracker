@@ -40,7 +40,65 @@
     </style>
   </head>
   <body>
+     <section class="hero bg-base-200 min-h-screen">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="card p-6 bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div class="mx-auto">
+            <div class="flex justify-center items-center p-6">
+              <img src="./images/github-logo.png" alt="" />
+            </div>
+            <div class="text-center">
+              <h2 class="text-2xl font-semibold text-[#1F2937]">
+                GitHub Issues Tracker
+              </h2>
+              <p class="text-[#64748B]">Sign in to manage your issues</p>
+            </div>
+          </div>
+          <div class="card-body space-y-3">
+            <fieldset class="fieldset">
+              <div class="space-y-1">
+                <label  class="label font-medium text-[#1F2937]">Username</label>
+                <input
+                  id="input-name"
+                  type="text"
+                  class="input rounded-lg"
+                  placeholder=" Enter Username"
+                />
+                <p class="text-[#4A00FF] mb-1">Default: admin</p>
+              </div>
+              <div class="space-y-1">
+                <label class="label font-medium text-[#1F2937]">Password</label>
+                <input
+                id="input-pin" 
+                minlength="8"
+                maxlength="8"
+                  type="password"
+                  class="input rounded-lg"
+                  placeholder="Password"
+                />
+                <p class="text-[#4A00FF]">Default: admin123</p>
+              </div>
+              <button id="signin-btn" class="btn btn-primary my-4">Sign In</button>
+              <div class="flex items-center  ">
+                  <div class="flex-grow border-t border-gray-300"></div>
+                  <span class=" text-gray-500">OR</span>
+                  <div class="flex-grow border-t border-gray-300"></div>
+                </div>
 
+                <div class=" text-center space-y-3">
+                    <p class="text-[#64748B]">Demo Credentials:</p>
+                   <div>
+                      <h2 class="font-medium">Username: <span class="text-gray-500">admin</span> </h2>      
+                      <h2 class="font-medium">Password: <span class="text-gray-500">admin123</span> </h2>
+                    </div>
+                    
+                </div>
+            </fieldset>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
  <script src="./script/sign-in.js"></script>
   </body>
 </html>
