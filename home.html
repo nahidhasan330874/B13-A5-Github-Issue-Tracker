@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Page</title>
+    <link
+      rel="shortcut icon"
+      href="/images/github-logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- font-awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  daisyUI / tailwind-css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Geist", sans-serif;
+      }
+    </style>
+  </head>
+   <body class="min-h-screen bg-base-300">
+    <header>
+      <div class="navbar bg-base-100 shadow-sm mb-8">
+        <div class="flex-1">
+          <h2 class="text-[#1F2937] text-2xl font-semibold">
+            <i class="fa-brands fa-github"></i> GitHub Issues Tracker
+          </h2>
+        </div>
+        <div class="flex gap-2">
+          <input
+            id="input-search"
+            type="text"
+            placeholder="Search issues..."
+            class="input input-bordered w-24 md:w-auto"
+          />
+          <div class="">
+            <button id="btn-search" class="btn btn-primary">
+              <i class="fa-solid fa-plus"></i> New Issue
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  
+    <script src="./script/script.js"></script>
+  </body>
+</html>
